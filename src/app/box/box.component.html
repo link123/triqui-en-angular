@@ -1,0 +1,7 @@
+<div class="board">
+    <div class="subBoard" *ngFor="let box of boxlist; let i = index">
+        <button [disabled]="box.disable" (click)="touchBox(i)">
+      <h1 style="color:{{ box.color }}">{{ box.value }}</h1>
+    </button>
+    </div>
+</div>
